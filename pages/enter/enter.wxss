@@ -1,0 +1,146 @@
+/* pages/enter/enter.wxss */
+
+page {
+  animation: myfirst 45s;
+  -moz-animation: myfirst 25s; /* Firefox */
+  -webkit-animation: myfirst 25s; /* Safari and Chrome */
+  -o-animation: myfirst 25s; /* Opera *//* background:-moz-radial-gradient(80% 20%,farthest-side, #95b3c7, #519cce);
+    background:-webkit-radial-gradient(80% 20%,farthest-side, #95b3c7, #519cce); */
+  background-color: rgb(24, 8, 8);
+}
+
+.welcome_txt {
+  font-size: 100rpx;
+}
+
+.welcome_box {
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: 800;
+  height: 30%;
+  color: rgb(208, 211, 208);
+  margin-top: 230rpx;
+}
+
+.welcome_txt2 {
+  position: relative;
+  font-size: 30rpx;
+}
+
+.choice_btn {
+  height: 70%;
+  padding: 10rpx;
+  top: 50%;
+}
+
+.btn_box {
+  height: 600rpx;
+  margin-top: 20%;
+}
+
+.btn2 {
+  margin-top: 40rpx;
+  background-color: rgb(238, 51, 51);
+  color: rgb(224, 224, 224);
+  height: 100rpx;
+  opacity: 0.9;
+}
+
+.btn1 {
+  background-color: rgb(84, 196, 108);
+  color: rgb(224, 224, 224);
+  height: 100rpx;
+  opacity: 0.9;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 20rpx;
+  width: 100%;
+  text-align: center !important;
+  font-size: 22rpx;
+  color: rgb(248, 242, 242);
+
+}
+
+.img_jiantou {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  z-index: 999;
+  height: 30%;
+  width: 30%;
+}
+
+.alert_container {
+  position: relative;
+  width: 85%;
+  height: 30%;
+  background-color: rgb(102, 102, 124);
+  z-index: 10000;
+  border-radius: 12rpx;
+  opacity: 0.8;
+  font-size: 42rpx;
+  padding: 30rpx;
+}
+
+.alert_container text {
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.alert_box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center; /*定义body的元素垂直居中*/
+  justify-content: center; /*定义body的里的元素水平居中*/
+ z-index: 999;
+ background-color:rgb(61, 59, 59,0.9);
+
+}
+
+.alert_text {
+  font-size: 20rpx;
+}
+
+.confirm_btn {
+  position: absolute;
+  top: 70%;
+  width: 40%;
+  z-index: 1000;
+  background-color: rgb(22, 25, 71);
+  opacity: 0.85;
+  color: rgb(201, 201, 201);
+}
+
+/* @keyframes myfirst
+{
+from {background: #519cce;}
+to {background:rgb(19, 19, 10);}
+} */
+
+@keyframes myfirst {
+  0% {
+    background: rgb(46, 41, 41);
+  }
+
+  15% {
+    background: rgb(62, 32, 102);
+  }
+
+  40% {
+    background: rgb(100, 100, 187);
+  }
+
+  70% {
+    background: green;
+  }
+
+  100% {
+    background: rgb(24, 8, 8);
+  }
+}

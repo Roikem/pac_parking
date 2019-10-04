@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container index_bg">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="start_btn"> 点击开始寻车</button> 
+    
+    <block wx:else>
+      <view class="map_box">
+        <map id="map" longitude="104.14325542795564" latitude="30.676548453157963" scale="20" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location show-scale show-compass></map>
+
+      </view>
+      <view class="out_box">
+  <button class="map_btn" bindtap="guided">导航</button>
+  <button class="found_btn" bindtap="found_park">我已到达停车场</button>
+  </view>
+    </block>
+
+
+
+</view>

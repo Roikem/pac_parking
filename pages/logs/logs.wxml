@@ -1,0 +1,16 @@
+<!--logs.wxml-->
+<view class="container">
+<view class="canvans_box">
+<canvas style="width: 700rpx; height: 700rpx; z-index:5" canvas-id="firstCanvas"></canvas>
+<view class="canvans_bg_box"></view>
+  <image class="canvans_bg" src="../../icons/parking_map_final1.png"></image>
+  </view>
+  <view class="choice_box">
+<text class="choice_text" wx:if="{{index==='404'}}">请选择您的入口</text>
+<text class="choice_text" data-index="{{index}}" wx:if="{{index!=='404'}}" >您选的入口为{{array[index]}}</text>
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <button class="weui-btn choice_btn_picker" type="default">入口编号选择器</button>
+            </picker>
+  </view>
+
+</view>

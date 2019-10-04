@@ -1,0 +1,35 @@
+<!--pages/enter/enter.wxml-->
+<view class="welcome_box">
+<view class="alert_box" data-index="{{index}}" wx:if="{{index==='1'}}">
+<image src="../../icons/jiantou.png" class="img_jiantou" ></image>
+   <view class="alert_container">
+    <text>
+    
+         请点击右上角圆点
+        或者手机home键退出
+         </text>
+         <text class="alert_text">
+         (由于目前微信版本不支持退出并且能后台运行的api,敬请等待版本更新)</text>
+    </view>
+  <button class="confirm_btn" bindtap="exit_use">确定</button>
+</view>
+  <view class="welcome_txt">
+    <text>欢迎使用</text>
+  </view>
+  <text class="welcome_txt1">pac地下停车场智能寻车</text>
+  <view>
+    <text class="welcome_txt2">(测试版本）</text>
+  </view>
+</view>
+
+
+<view class="choice_btn">
+<view class="btn_box">
+
+  <button class="btn1" bindtap="exit_use">暂时退出到后台运行</button>
+
+  <button class="btn2" bindtap="start_use">开始使用</button>
+</view>
+</view>
+<view class="bottom">
+<text >  ©5704studio</text></view>
